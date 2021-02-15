@@ -1,2 +1,3 @@
 # IntAve
-Project 10 from my Programming Concepts class during the Spring 2016 semester.
+
+This program reads a text file consisting of integer values and computes the arithmetic mean (average) of the values.
