@@ -1,16 +1,21 @@
-//************************************************************
+//*************************************************************
 //  Author: Steven Smail
 //
 //  IntAve.java
 //
 //  This program reads a text file consisting of integer
-//  values and computes the average of the values.//************************************************************
+//  values and computes the average of the values.
+//*************************************************************
 
 import java.util.Scanner;
 import java.io.File;
-import java.io.FileNotFoundException;
-public class IntAve{    public static void main (String[] args)
-        throws FileNotFoundException    {
+import java.io.FileNotFoundException;
+
+public class IntAve
+{
+    public static void main (String[] args)
+        throws FileNotFoundException
+    {
         int n, total = 0, count = 0;
         double average;
 
@@ -28,7 +33,9 @@ public class IntAve{    public static void main (String[] args)
             Scanner fileScanner = new Scanner(file);
 
             System.out.println();
-            while (fileScanner.hasNext()) //Test for end of file            {                n = fileScanner.nextInt();
+            while (fileScanner.hasNext()) //Test for end of file
+            {
+                n = fileScanner.nextInt();
                 total += n;
                 count++;
             }
@@ -38,9 +45,11 @@ public class IntAve{    public static void main (String[] args)
             System.out.println("The average is " + average);
         }
 
-        catch (FileNotFoundException ex)        {
+        catch (FileNotFoundException ex)
+        {
             System.out.println("File " + filename + 
-                               " was not found");        }
+                               " was not found");
+        }
         System.out.println();
         System.out.println("Program complete");
         System.out.println();
